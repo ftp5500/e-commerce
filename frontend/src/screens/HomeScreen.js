@@ -4,6 +4,9 @@ import {useDispatch, useSelector} from "react-redux";
 import {Row, Col} from 'react-bootstrap'
 import Product from '../components/Product'
 import {listProducts} from "../actions/productActions";
+import AlertMessage from "../components/AlertMessage";
+import Loader from "../components/Loader";
+
 
 
 function HomeScreen({history}) {
@@ -15,22 +18,26 @@ function HomeScreen({history}) {
     useEffect(() => {
         dispatch(listProducts())
 
-    }, []);
+    }, [dispatch]);
 
     return (
         <div>
-            <div>
-                <Row>
-                    {products.map(product => (
-                        <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-                            <Product product={product}/>
-                        </Col>
-                    ))}
-                </Row>
+            <h1>Latest Products</h1>
+            {loading ? <Loader/>
+                : error ? <h4> <AlertMessage color="danger" message={error}/></h4>
+                    :
 
-            </div>
+                    <Row>
+                        {products.map(product => (
+                            <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+                                <Product product={product}/>
+                            </Col>
+                        ))}
+                    </Row>
+            }
 
         </div>
+
     )
 }
 
