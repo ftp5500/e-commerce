@@ -24,7 +24,7 @@ function HomeScreen({history}) {
         <div>
             <h1>Latest Products</h1>
             {loading ? <Loader/>
-                : error ? <h4> <AlertMessage color="danger" message={error}/></h4>
+                : error ? <h4> <AlertMessage variant="danger" message={error}/></h4>
                     :
 
                     <Row>

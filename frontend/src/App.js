@@ -1,5 +1,5 @@
 import {Container} from 'react-bootstrap'
-
+import React, { Component }  from 'react';
 import {
     BrowserRouter,
     Routes,

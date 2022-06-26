@@ -2,11 +2,11 @@ import {Alert} from "react-bootstrap";
 import React from 'react';
 
 
-function AlertMessage({color, message}) {
+function AlertMessage({ variant, message}) {
 
     return (
         <div>
-            <Alert variant={color}>
+            <Alert variant={variant}>
                 {message}
             </Alert>
 
