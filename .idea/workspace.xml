@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4660c399-086c-41cb-a77e-cb11aabf267b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c832d30a-6f72-4dc3-85bb-1da79f11a9f2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c832d30a-6f72-4dc3-85bb-1da79f11a9f2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/actions/productActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/productActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/AlertMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AlertMessage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/reducers/ProductsReducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducers/ProductsReducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screens/HomeScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/screens/ProductScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screens/ProductScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +120,7 @@
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -154,7 +144,8 @@
       <workItem from="1655538943940" duration="99000" />
       <workItem from="1655539168797" duration="8795000" />
       <workItem from="1655995557147" duration="6210000" />
-      <workItem from="1656218022422" duration="4942000" />
+      <workItem from="1656218022422" duration="11620000" />
+      <workItem from="1656308015579" duration="801000" />
     </task>
     <servers />
   </component>

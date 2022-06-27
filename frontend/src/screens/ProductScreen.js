@@ -1,6 +1,6 @@
 import {Link, useParams} from 'react-router-dom'
 import React, {Component} from 'react';
-import {Row, Col, Image, ListGroup, Button, Card} from 'react-bootstrap'
+import {Row, Col, Image, ListGroup, Button, Card,Form} from 'react-bootstrap'
 import Rating from '../components/Rating'
 import AlertMessage from "../components/AlertMessage";
 import Loader from "../components/Loader";
@@ -11,6 +11,7 @@ import {listProductDetails} from "../actions/productActions";
 
 
 function ProductScreen() {
+    const [qty , setQty] = useState(1)
     const dispatch = useDispatch();
     const productDetails = useSelector(state => state.productDetails);
     const {loading, error, product} = productDetails;
@@ -78,6 +79,36 @@ function ProductScreen() {
                                                     </Col>
                                                 </Row>
                                             </ListGroup.Item>
+
+
+
+
+                                            {product.countInStock > 0 &&(
+                                                <ListGroup.Item>
+                                                    <Row>
+                                                        <Col>Qty</Col>
+                                                        <Col xs='auto' className="my-1">
+                                                            <Form.Control
+                                                                as="select"
+                                                                value={qty}
+                                                                onChange={(e)=> setQty(e.target.value)}
+                                                            >
+                                                                {
+                                                                     [...Array(product.countInStock).keys()].map((x)=>(
+                                                                        <option value={x+1} key={x +1 } >
+                                                                            {x+1}
+                                                                        </option>
+                                                                    ))
+                                                                   }
+
+                                                            </Form.Control>
+                                                        </Col>
+                                                    </Row>
+                                                </ListGroup.Item>
+                                            )}
+
+
+
 
 
                                             <ListGroup.Item>
